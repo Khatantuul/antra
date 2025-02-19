@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+   
+}
+html{
+    font-size: 10px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 2rem;
+ 
+}
+
+.form-row{
+    display: flex;
+    gap: 2rem;
+    padding: 0.8rem 1.2rem;
+}
+
+.form-row-footer{
+    display: flex;
+    gap: 2.6rem;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+input{
+    font-size: 1.6rem;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.form-row-footer .checkbox{
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.form-row-footer span{
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #3b82f6;
+    color: #fff;
+    padding: 0.1rem 0.4rem;
+}
+.form-row-footer a{
+    text-decoration: none;
+}
+
+@media (min-width: 600px){
+    .form-row-footer .checkbox{
+        flex-direction: row;
+    }
+}
+
+input[type="checkbox"]{
+    margin-right: 0.8rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.form-row-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.8rem 1.2rem;
+}
+.form-row-buttons button, .form-row-buttons > a{
+    padding: 1rem 10rem;
+    font-size: 1.6rem;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 0.4rem;
+}
+.form-row-buttons button{
+    background-color: #3b82f6;
+}
+
+.form-row-buttons a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: rgb(42, 136, 42);
+}
+
+@media (min-width: 600px){
+    .form-row-buttons{
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
+
