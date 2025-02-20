@@ -15,7 +15,7 @@ body{
     align-items: center;
 }
 
-form h1{
+.signup__title{
     text-align: center;
     font-size: 3rem;
 }
@@ -26,13 +26,13 @@ form h1{
  
 }
 
-.form-row{
+.signup__row{
     display: flex;
     gap: 2rem;
     padding: 0.8rem 1.2rem;
 }
 
-.form-row-footer{
+.signup__terms{
     display: flex;
     gap: 2.6rem;
     padding: 0.8rem 1.2rem;
@@ -40,7 +40,7 @@ form h1{
     line-height: 1.8rem;
 }
 
-input{
+.signup__input{
     font-size: 1.6rem;
     padding: 0.8rem;
     border: 1px solid #ddd;
@@ -48,7 +48,7 @@ input{
     width: 100%;
 }
 
-.form-row-footer .checkbox{
+.signup__checkbox-wrapper{
     width: 15rem;
     display: flex;
     flex-direction: column;
@@ -56,24 +56,24 @@ input{
     font-size: 1.6rem;
     font-weight: bold;
 }
-.form-row-footer span{
+.signup__highlight{
     border: 1px solid transparent;
     border-radius: 4px;
     background-color: #3b82f6;
     color: #fff;
     padding: 0.1rem 0.4rem;
 }
-.form-row-footer a{
+.signup__link{
     text-decoration: none;
 }
 
 @media (min-width: 600px){
-    .form-row-footer .checkbox{
+    .signup__checkbox-wrapper{
         flex-direction: row;
     }
 }
 
-input[type="checkbox"]{
+.signup__checkbox{
     margin-right: 0.8rem;
     width: 1.8rem;
     height: 1.8rem;
@@ -81,25 +81,25 @@ input[type="checkbox"]{
     border-radius: 2px;
 }
 
-.form-row-buttons{
+.signup__actions{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
     padding: 0.8rem 1.2rem;
 }
-.form-row-buttons button, .form-row-buttons > a{
+.button{
     padding: 1rem 10rem;
     font-size: 1.6rem;
     color: white;
     border: 1px solid transparent;
     border-radius: 0.4rem;
 }
-.form-row-buttons button{
+.button--primary{
     background-color: #3b82f6;
 }
 
-.form-row-buttons a{
+.signup__link--signin{
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -108,7 +108,7 @@ input[type="checkbox"]{
 }
 
 @media (min-width: 600px){
-    .form-row-buttons{
+    .signup__actions{
         flex-direction: row;
         gap: 2rem;
     }

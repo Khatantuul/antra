@@ -4,45 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Sign Up UI</title>
   </head>
   <body>
     <section>
       <div class="form-container">
-        <form>
-          <h1>Sign Up</h1>
-          <div class="form-row">
-            <input type="text" name="firstName" placeholder="First Name" />
-            <input type="text" name="lastName" placeholder="Last Name" />
+        <form class="signup">
+          <h1 class="signup__title">Sign Up</h1>
+          <div class="signup__row">
+            <input type="text" name="firstName" placeholder="First Name" class="signup__input"/>
+            <input type="text" name="lastName" placeholder="Last Name" class="signup__input" />
           </div>
-          <div class="form-row">
-            <input type="tel" name="mobile" placeholder="Mobile No." />
+          <div class="signup__row">
+            <input type="tel" name="mobile" placeholder="Mobile No." class="signup__input" />
           </div>
-          <div class="form-row">
-            <input type="email" name="email" placeholder="Email Address" />
+          <div class="signup__row">
+            <input type="email" name="email" placeholder="Email Address" class="signup__input"/>
           </div>
-          <div class="form-row">
-            <input type="password" name="password" placeholder="Password" />
+          <div class="signup__row">
+            <input type="password" name="password" placeholder="Password" class="signup__input"/>
             <input
               type="password"
               name="confirmpassword"
               placeholder="Confirm Password"
+              class="signup__input"
             />
           </div>
-          <div class="form-row-footer">
-            <div class="checkbox">
-              <input type="checkbox" name="agree" id="agree" />
-              <label for="agree">I Agree</label>
+          <div class="signup__terms">
+            <div class="signup__checkbox-wrapper">
+              <input type="checkbox" name="agree" id="agree" class="signup__checkbox" />
+              <label for="agree" class="signup__label">I Agree</label>
             </div>
             <div>
-              By clicking <span>Register</span>, you agree to the
-              <a href="#">Terms and Conditions</a> set out by this site,
+              By clicking <span class="signup__highlight">Register</span>, you agree to the
+              <a href="#" class="signup__link">Terms and Conditions</a> set out by this site,
               including our Cookie Use
             </div>
           </div>
-          <div class="form-row-buttons">
-            <button type="submit">Register</button>
-            <a href="#">Sign In</a>
+          <div class="signup__actions">
+            <button type="submit" class="button button--primary">Register</button>
+            <a href="#" class="button signup__link signup__link--signin">Sign In</a>
           </div>
         </form>
       </div>
